@@ -17,8 +17,9 @@
             
         }
         #biden{
-            animation-name: moveskibiden;
+            animation-name: movebiden;
             animation-duration: 1s;
+            animation-iteration-count: infinite;
         }
         #block{
             height: 1.25em;
@@ -53,24 +54,28 @@
             100%{
                 transform: translateY(0)
         }
-                         @keyframes moves{
+        }
+                   @keyframes movebiden{
             0%{
-                transform: translate(0);
+                transform: translateX(0);
             }
             50%{
                 transform: translate(500px,500px);
+                
             }
             100%{
-                transform: translate(0)
+                transform: translateX(0);
+            }
         }
-                }
                 
         </style>
     </head>
     
     <body>
     <div id="dot"></div>
-        <div id="block"></div>
-        <img id="biden" src="skibden.jpg">
+    <div id="block"></div>
+        <div id="biden">
+    <img  src="skibden.jpg">
+        </div>
     </body>
 </html>
