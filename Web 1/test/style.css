@@ -1,15 +1,9 @@
-@keyframes spin {
-    from{
-        transform: rotate(0deg);
 
-    }
-    to{
-        transform: translate(5000px);
-    }
+#test{
     
-}
-
-#inner{
+    width: 10px;
+    height: 10px;
+    background-color:"#ff0000";
     
 }
 
