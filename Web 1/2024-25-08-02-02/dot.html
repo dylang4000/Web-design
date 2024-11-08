@@ -12,13 +12,17 @@
             border-radius: 50%;
             border:6px black solid;
             animation-name: movedot;
-            animation-duration: 1s;
+            animation-duration: 5s;
             animation-iteration-count: infinite;
             
         }
         #biden{
-            animation-name: moveskibiden;
-            animation-duration: 1s;
+            width:200px;
+            height: 200px;
+            background-image: url(left.jpg);
+            animation-name: movebiden;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
         }
         #block{
             height: 1.25em;
@@ -27,7 +31,7 @@
             border-radius: 23%;
             border:6px black solid;
             animation-name: movebox;
-            animation-duration: 1s;
+            animation-duration: 5s;
             animation-iteration-count: infinite;
             
         }
@@ -36,41 +40,61 @@
             0%{
                 transform: translateX(0);
             }
-            50%{
+            25%{
                 transform: translateX(500px);
+            }
+            50%{
+                transform: translateX(0)
+            }
+            75%{
+               transform: translateY(500px)
+            }
+            100%{
+                transform: translateY(0)
+            }
+        }
+            @keyframes movebox{
+                        0%{
+                transform: translateY(0);
+            }
+            25%{
+                transform: translateY(500px);
+            }
+            50%{
+                transform: translateY(0)
+            }
+            75%{
+               transform: translateX(500px)
             }
             100%{
                 transform: translateX(0)
             }
         }
-            @keyframes movebox{
+                   @keyframes movebiden{
             0%{
-                transform: translateY(0);
-            }
-            50%{
-                transform: translateY(500px);
-            }
-            100%{
-                transform: translateY(0)
-        }
-                         @keyframes moves{
-            0%{
-                transform: translate(0);
+                transform: translateX(0);
+                
             }
             50%{
                 transform: translate(500px,500px);
+                
             }
+                       51%{
+                           background-image: url(left.jpg)
+                       }
             100%{
-                transform: translate(0)
+                transform: translateX(0);
+            }
         }
-                }
                 
         </style>
     </head>
     
     <body>
     <div id="dot"></div>
-        <div id="block"></div>
-        <img id="biden" src="skibden.jpg">
+    <div id="block"></div>
+        <div id="biden">
+    <img  src="skibden.jpg">
+        </div>
     </body>
 </html>
