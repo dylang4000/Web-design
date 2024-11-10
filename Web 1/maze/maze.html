@@ -4,54 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAZE</title>
-    <style>
-        body{
-            background-color: #7e311f;
-            display: flex;
-            justify-content: center;
-        }
-
-        #turkey{
-            width:60px;
-            height: 60px;
-            transform: translate(0px,312px) scaleX(-1);
-            animation-name:moveturkey;
-            animation-duration: 3s;
-            animation-iteration-count: infinite;
-            
-        }
-        @keyframes moveturkey{
-            0%{
-                transform: translate(0px,335px) scaleX(-1);
-               
-            }
-            100%{
-                transform:translate(0px,355px) scaleX(-1) ;
-            }
-        }
-        .glyph{
-            width:60px;
-            height: 60px;
-            animation-name: idle;
-            animation-duration: 3s;
-            animation-iteration-count: infinite;
-        }
-        @keyframes idle{
-            0%{
-                transform: scale(1,1);
-            }
-            
-            50%{
-            
-                transform: scale(1.2,1.2)translateY(3px);
-            }
-            100%{
-                transform: scale(1,1)
-            }
-            
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="glyph" id="cheese">🧀</div>
