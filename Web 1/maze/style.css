@@ -26,8 +26,8 @@ body{
     font-size: 1.3rem;
     width:60px;
     height: 60px;
-    transform:translate(150px,275px) scaleX(-1);
-    animation-name:"moveturkey";
+    transform:translate(135px,256px) scaleX(1);
+    animation-name:"moveturkeey";
     animation-duration: 12s;
     animation-iteration-count: infinite;
     
@@ -39,8 +39,8 @@ body{
     7.142857142857142% {transform:translate(49px,312px) scaleX(-1)};
     9.523809523809524% {transform:translate(150px,312px) scaleX(-1)};
     11.904761904761905%{transform:translate(150px,256px) scaleX(-1)};
-    14.285714285714285%{};
-    16.666666666666668%{};
+    14.285714285714285%{transform:translate(135px,256px) scaleX(1)};
+    16.666666666666668%{transform:translate(150px,256px) scaleX(-1)};
     19.047619047619047%{};
     21.428571428571427%{};
     23.80952380952381% {};
