@@ -1,0 +1,21 @@
+#text1{
+    animation-name: text;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes text {
+    0%{
+        transform: translate(999px,0px);
+    }
+    1%{
+        
+    }
+    50%{
+        transform: scale(2);
+    }
+    100%{
+        
+    }
+}

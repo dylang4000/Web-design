@@ -1,0 +1,15 @@
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+
+    }
+    to{
+        transform: translate(5000px);
+    }
+    
+}
+
+#inner{
+    
+}
+
